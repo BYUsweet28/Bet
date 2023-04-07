@@ -3,7 +3,7 @@ import "./App.css";
 // import { useState } from "react";
 import HomePage from "./Home";
 import Navbar from "./Navbar";
-import MovieCollection from "./Movies";
+import MovieList from "./movie/MovieList";
 import MyPodcasts from "./Podcasts";
 import { BrowserRouter } from "react-router-dom";
 import { Route } from "react-router-dom";
@@ -18,7 +18,7 @@ function App() {
           <Routes>
             {/* The Paths to each of the pages on the navigation bar */}
             <Route path="/" element={<HomePage />} />
-            <Route path="/movies" element={<MovieCollection />} />
+            <Route path="/movies" element={<MovieList />} />
             <Route path="/podcasts" element={<MyPodcasts />} />
           </Routes>
         </BrowserRouter>
